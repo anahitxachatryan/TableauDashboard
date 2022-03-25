@@ -1,0 +1,1597 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20214.22.0213.1102                               -->
+<workbook original-version='18.1' source-build='2021.4.4 (20214.22.0213.1102)' source-platform='mac' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AccessibleZoneTabOrder.true...AccessibleZoneTabOrder />
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <MapboxVectorStylesAndLayers />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+    <WorksheetBackgroundTransparency />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='Air travel data (air travel dataset)' inline='true' name='federated.1i51rnd1nc8d5w17g1vig076jv7i' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='air travel dataset' name='excel-direct.0gvjcs71wh9v78105b4hk16w1s84'>
+            <connection class='excel-direct' cleaning='yes' compat='no' dataRefreshTime='' filename='/Users/anahitkhachatryan/Desktop/Anahit_projects/TableauDashboard/Air Travel/air travel dataset.xlsx' interpretationMode='1' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='excel-direct.0gvjcs71wh9v78105b4hk16w1s84' name='Air travel data' table='[&apos;Air travel data$&apos;]' type='table'>
+          <columns gridOrigin='A1:Q10001:no:A1:Q10001:1' header='yes' lost='0' outcome='1' processed='88296'>
+            <column datatype='real' name='Geometry Coordinates 0 0' ordinal='0' />
+            <column datatype='real' name='Geometry Coordinates 0 1' ordinal='1' />
+            <column datatype='real' name='Geometry Coordinates 1 0' ordinal='2' />
+            <column datatype='real' name='Geometry Coordinates 1 1' ordinal='3' />
+            <column datatype='string' name='Geometry Type' ordinal='4' />
+            <column datatype='date' name='Properties Edtf Cessation' ordinal='5' />
+            <column datatype='string' name='Properties Edtf Inception' ordinal='6' />
+            <column datatype='integer' name='Properties Flysfo Actual Timestamp' ordinal='7' />
+            <column datatype='string' name='Properties Flysfo Airline' ordinal='8' />
+            <column datatype='string' name='Properties Flysfo Base Airline' ordinal='9' />
+            <column datatype='integer' name='Properties Flysfo Base Flight Number' ordinal='10' />
+            <column datatype='date' name='Date' ordinal='11' />
+            <column datatype='integer' name='Properties Flysfo Estimated Timestamp' ordinal='12' />
+            <column datatype='string' name='Properties Flysfo Event' ordinal='13' />
+            <column datatype='string' name='Properties Flysfo Flight Number' ordinal='14' />
+            <column datatype='string' name='Properties Flysfo Gate' ordinal='15' />
+            <column datatype='string' name='Route' ordinal='16' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='excel-direct.0gvjcs71wh9v78105b4hk16w1s84' name='Air travel data' table='[&apos;Air travel data$&apos;]' type='table'>
+          <columns gridOrigin='A1:Q10001:no:A1:Q10001:1' header='yes' lost='0' outcome='1' processed='88296'>
+            <column datatype='real' name='Geometry Coordinates 0 0' ordinal='0' />
+            <column datatype='real' name='Geometry Coordinates 0 1' ordinal='1' />
+            <column datatype='real' name='Geometry Coordinates 1 0' ordinal='2' />
+            <column datatype='real' name='Geometry Coordinates 1 1' ordinal='3' />
+            <column datatype='string' name='Geometry Type' ordinal='4' />
+            <column datatype='date' name='Properties Edtf Cessation' ordinal='5' />
+            <column datatype='string' name='Properties Edtf Inception' ordinal='6' />
+            <column datatype='integer' name='Properties Flysfo Actual Timestamp' ordinal='7' />
+            <column datatype='string' name='Properties Flysfo Airline' ordinal='8' />
+            <column datatype='string' name='Properties Flysfo Base Airline' ordinal='9' />
+            <column datatype='integer' name='Properties Flysfo Base Flight Number' ordinal='10' />
+            <column datatype='date' name='Date' ordinal='11' />
+            <column datatype='integer' name='Properties Flysfo Estimated Timestamp' ordinal='12' />
+            <column datatype='string' name='Properties Flysfo Event' ordinal='13' />
+            <column datatype='string' name='Properties Flysfo Flight Number' ordinal='14' />
+            <column datatype='string' name='Properties Flysfo Gate' ordinal='15' />
+            <column datatype='string' name='Route' ordinal='16' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Air travel data]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:Q10001:no:A1:Q10001:1&quot;</attribute>
+              <attribute datatype='integer' name='lost'>0</attribute>
+              <attribute datatype='integer' name='outcome'>1</attribute>
+              <attribute datatype='integer' name='processed'>88296</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Geometry Coordinates 0 0</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Geometry Coordinates 0 0]</local-name>
+            <parent-name>[Air travel data]</parent-name>
+            <remote-alias>Geometry Coordinates 0 0</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Air travel data_0B3AF664DEF84629BBE7573B13503C8B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Geometry Coordinates 0 1</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Geometry Coordinates 0 1]</local-name>
+            <parent-name>[Air travel data]</parent-name>
+            <remote-alias>Geometry Coordinates 0 1</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Air travel data_0B3AF664DEF84629BBE7573B13503C8B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Geometry Coordinates 1 0</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Geometry Coordinates 1 0]</local-name>
+            <parent-name>[Air travel data]</parent-name>
+            <remote-alias>Geometry Coordinates 1 0</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Air travel data_0B3AF664DEF84629BBE7573B13503C8B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Geometry Coordinates 1 1</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Geometry Coordinates 1 1]</local-name>
+            <parent-name>[Air travel data]</parent-name>
+            <remote-alias>Geometry Coordinates 1 1</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Air travel data_0B3AF664DEF84629BBE7573B13503C8B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Geometry Type</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Geometry Type]</local-name>
+            <parent-name>[Air travel data]</parent-name>
+            <remote-alias>Geometry Type</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Air travel data_0B3AF664DEF84629BBE7573B13503C8B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Properties Edtf Cessation</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[Properties Edtf Cessation]</local-name>
+            <parent-name>[Air travel data]</parent-name>
+            <remote-alias>Properties Edtf Cessation</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Air travel data_0B3AF664DEF84629BBE7573B13503C8B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Properties Edtf Inception</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Properties Edtf Inception]</local-name>
+            <parent-name>[Air travel data]</parent-name>
+            <remote-alias>Properties Edtf Inception</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Air travel data_0B3AF664DEF84629BBE7573B13503C8B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Properties Flysfo Actual Timestamp</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Properties Flysfo Actual Timestamp]</local-name>
+            <parent-name>[Air travel data]</parent-name>
+            <remote-alias>Properties Flysfo Actual Timestamp</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Air travel data_0B3AF664DEF84629BBE7573B13503C8B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Properties Flysfo Airline</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Properties Flysfo Airline]</local-name>
+            <parent-name>[Air travel data]</parent-name>
+            <remote-alias>Properties Flysfo Airline</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Air travel data_0B3AF664DEF84629BBE7573B13503C8B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Properties Flysfo Base Airline</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Properties Flysfo Base Airline]</local-name>
+            <parent-name>[Air travel data]</parent-name>
+            <remote-alias>Properties Flysfo Base Airline</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Air travel data_0B3AF664DEF84629BBE7573B13503C8B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Properties Flysfo Base Flight Number</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Properties Flysfo Base Flight Number]</local-name>
+            <parent-name>[Air travel data]</parent-name>
+            <remote-alias>Properties Flysfo Base Flight Number</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Air travel data_0B3AF664DEF84629BBE7573B13503C8B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Date</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[Date]</local-name>
+            <parent-name>[Air travel data]</parent-name>
+            <remote-alias>Date</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Air travel data_0B3AF664DEF84629BBE7573B13503C8B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Properties Flysfo Estimated Timestamp</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Properties Flysfo Estimated Timestamp]</local-name>
+            <parent-name>[Air travel data]</parent-name>
+            <remote-alias>Properties Flysfo Estimated Timestamp</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Air travel data_0B3AF664DEF84629BBE7573B13503C8B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Properties Flysfo Event</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Properties Flysfo Event]</local-name>
+            <parent-name>[Air travel data]</parent-name>
+            <remote-alias>Properties Flysfo Event</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Air travel data_0B3AF664DEF84629BBE7573B13503C8B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Properties Flysfo Flight Number</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Properties Flysfo Flight Number]</local-name>
+            <parent-name>[Air travel data]</parent-name>
+            <remote-alias>Properties Flysfo Flight Number</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Air travel data_0B3AF664DEF84629BBE7573B13503C8B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Properties Flysfo Gate</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Properties Flysfo Gate]</local-name>
+            <parent-name>[Air travel data]</parent-name>
+            <remote-alias>Properties Flysfo Gate</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Air travel data_0B3AF664DEF84629BBE7573B13503C8B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Route</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Route]</local-name>
+            <parent-name>[Air travel data]</parent-name>
+            <remote-alias>Route</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Air travel data_0B3AF664DEF84629BBE7573B13503C8B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Number of Flights' datatype='integer' name='[Calculation_723812919161110529]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column caption='Busy' datatype='string' name='[Calculation_723812919165427714]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='IF [Route - Split 1] = &apos;SFO&apos; THEN [Route - Split 2] ELSE [Route - Split 1] END' />
+      </column>
+      <column caption='Origin' datatype='spatial' name='[Calculation_723812919168425988]' role='measure' type='nominal'>
+        <calculation class='tableau' formula='MAKEPOINT([Geometry Coordinates 1 1],[Geometry Coordinates 1 0])' />
+      </column>
+      <column caption='Destination' datatype='spatial' name='[Calculation_723812919168524293]' role='measure' type='nominal'>
+        <calculation class='tableau' formula='MAKEPOINT([Geometry Coordinates 0 0],[Geometry Coordinates 0 1])' />
+      </column>
+      <column caption='Distance' datatype='real' name='[Calculation_723812919168614406]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='DISTANCE([Calculation_723812919168425988],[Calculation_723812919168524293],&apos;Km&apos;)' />
+      </column>
+      <column caption='Flights LINE' datatype='spatial' name='[Calculation_723812919175372808]' role='measure' type='nominal'>
+        <calculation class='tableau' formula='MAKELINE([Calculation_723812919168425988],[Calculation_723812919168524293])' />
+      </column>
+      <column datatype='date' name='[Date]' role='dimension' type='ordinal' />
+      <column caption='Route - Split 1' datatype='string' name='[Route - Split 1]' role='dimension' type='nominal' user:SplitFieldIndex='1' user:SplitFieldOrigin='[federated.1i51rnd1nc8d5w17g1vig076jv7i].[Route]'>
+        <calculation class='tableau' formula='TRIM( SPLIT( [Route], &quot;-&quot;, 1 ) )' />
+      </column>
+      <column caption='Route - Split 2' datatype='string' name='[Route - Split 2]' role='dimension' type='nominal' user:SplitFieldIndex='2' user:SplitFieldOrigin='[federated.1i51rnd1nc8d5w17g1vig076jv7i].[Route]'>
+        <calculation class='tableau' formula='TRIM( SPLIT( [Route], &quot;-&quot;, 2 ) )' />
+      </column>
+      <_.fcp.ObjectModelTableType.true...column caption='Air travel data' datatype='table' name='[__tableau_internal_object_id__].[Air travel data_0B3AF664DEF84629BBE7573B13503C8B]' role='measure' type='quantitative' />
+      <column-instance column='[Calculation_723812919161110529]' derivation='Avg' name='[avg:Calculation_723812919161110529:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Calculation_723812919168614406]' derivation='Avg' name='[avg:Calculation_723812919168614406:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Calculation_723812919165427714]' derivation='None' name='[none:Calculation_723812919165427714:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Calculation_723812919161110529]' derivation='Sum' name='[sum:Calculation_723812919161110529:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Calculation_723812919168614406]' derivation='Sum' name='[sum:Calculation_723812919168614406:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Date]' derivation='Year' name='[yr:Date:ok]' pivot='key' type='ordinal' />
+      <group caption='Action (Busy)' hidden='true' name='[Action (Busy)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[Calculation_723812919165427714]' />
+        </groupfilter>
+      </group>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[yr:Date:ok]' type='palette'>
+            <map to='#76b7b2'>
+              <bucket>2020</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.1i51rnd1nc8d5w17g1vig076jv7i].[avg:Calculation_723812919168614406:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.1i51rnd1nc8d5w17g1vig076jv7i].[sum:Calculation_723812919168614406:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.1i51rnd1nc8d5w17g1vig076jv7i].[avg:Calculation_723812919161110529:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.1i51rnd1nc8d5w17g1vig076jv7i].[sum:Calculation_723812919161110529:qk]&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Calculation_723812919165427714:nk]' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;BFL&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;DEN&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;HNL&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;MDW&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;ORD&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;ROW&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;TLV&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;ABQ&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;CLT&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;GEG&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;LGA&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;MTJ&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;PTY&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;SJD&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;ASE&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;CVG&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;GYR&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;LIH&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;OGG&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;RDM&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;STL&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;BOI&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;DXB&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;IND&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;MIA&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;PDX&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;SAT&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;VCV&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;BLR&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;DFW&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;IAD&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;MEL&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;ORY&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;RSW&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;TPA&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;ATL&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;DAL&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;HDN&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;LIS&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;OKC&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;RDU&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;STS&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;CDG&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;FLL&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;LAS&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;MSP&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;PSC&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;SIN&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;YYZ&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;ACV&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;CMH&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;GJT&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;LGB&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;MUC&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;PVG&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;SLC&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;BZN&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;FAI&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;KIX&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;MRY&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;PIT&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;SEA&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;YVR&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;AUS&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;DCA&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;HKG&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;MCI&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;OMA&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;RIV&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;SUN&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;BOS&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;EGE&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;IST&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;MKE&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;PEK&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;SBA&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;XNA&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;BUR&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;EUG&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;JAC&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;MMH&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;PHL&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;SBP&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;YEG&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;CAN&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;FAT&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;KOA&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;MSN&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;PPT&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;SFO&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;YYC&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;CLE&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;GDL&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;LAX&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;MSY&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;PSP&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;SJC&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;ZRH&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;BNA&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;DTW&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;IAH&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;MEX&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;OTH&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;SAL&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;TPE&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;BCN&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;DEL&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;HND&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;MCO&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;ONT&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;RNO&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;SYD&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;AKL&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;CPH&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;GSO&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;LGW&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;NAN&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;PVR&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;SMF&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;BWI&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;EWR&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;JFK&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;MNL&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;PHX&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;SCK&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;YUL&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;BNE&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;DUB&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;ICN&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;MFR&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;PAE&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;SAN&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;TUS&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;AMS&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;CUN&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;GUM&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;LHR&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;NRT&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;RDD&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;SNA&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Air travel data' id='Air travel data_0B3AF664DEF84629BBE7573B13503C8B'>
+            <properties context=''>
+              <relation connection='excel-direct.0gvjcs71wh9v78105b4hk16w1s84' name='Air travel data' table='[&apos;Air travel data$&apos;]' type='table'>
+                <columns gridOrigin='A1:Q10001:no:A1:Q10001:1' header='yes' lost='0' outcome='1' processed='88296'>
+                  <column datatype='real' name='Geometry Coordinates 0 0' ordinal='0' />
+                  <column datatype='real' name='Geometry Coordinates 0 1' ordinal='1' />
+                  <column datatype='real' name='Geometry Coordinates 1 0' ordinal='2' />
+                  <column datatype='real' name='Geometry Coordinates 1 1' ordinal='3' />
+                  <column datatype='string' name='Geometry Type' ordinal='4' />
+                  <column datatype='date' name='Properties Edtf Cessation' ordinal='5' />
+                  <column datatype='string' name='Properties Edtf Inception' ordinal='6' />
+                  <column datatype='integer' name='Properties Flysfo Actual Timestamp' ordinal='7' />
+                  <column datatype='string' name='Properties Flysfo Airline' ordinal='8' />
+                  <column datatype='string' name='Properties Flysfo Base Airline' ordinal='9' />
+                  <column datatype='integer' name='Properties Flysfo Base Flight Number' ordinal='10' />
+                  <column datatype='date' name='Date' ordinal='11' />
+                  <column datatype='integer' name='Properties Flysfo Estimated Timestamp' ordinal='12' />
+                  <column datatype='string' name='Properties Flysfo Event' ordinal='13' />
+                  <column datatype='string' name='Properties Flysfo Flight Number' ordinal='14' />
+                  <column datatype='string' name='Properties Flysfo Gate' ordinal='15' />
+                  <column datatype='string' name='Route' ordinal='16' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <actions>
+    <action caption='Filter 1 (generated)' name='[Action1_1DC8519744A34FBA8C3A9E1F9BE752B0]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='San Francisco Airline' type='sheet' worksheet='Top 10 longest routes' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='San Francisco Airline' />
+      </command>
+    </action>
+    <action caption='Filter 2 (generated)' name='[Action2_FEEB94A221BA4A0B86A8D4A4134CB13B]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='San Francisco Airline' type='sheet' worksheet='Top 10 busiest routes ' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='San Francisco Airline' />
+      </command>
+    </action>
+  </actions>
+  <worksheets>
+    <worksheet name='Destinations'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Air travel data (air travel dataset)' name='federated.1i51rnd1nc8d5w17g1vig076jv7i' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.1i51rnd1nc8d5w17g1vig076jv7i'>
+            <column caption='Busy' datatype='string' name='[Calculation_723812919165427714]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF [Route - Split 1] = &apos;SFO&apos; THEN [Route - Split 2] ELSE [Route - Split 1] END' />
+            </column>
+            <column caption='Origin' datatype='spatial' name='[Calculation_723812919168425988]' role='measure' type='nominal'>
+              <calculation class='tableau' formula='MAKEPOINT([Geometry Coordinates 1 1],[Geometry Coordinates 1 0])' />
+            </column>
+            <column caption='Destination' datatype='spatial' name='[Calculation_723812919168524293]' role='measure' type='nominal'>
+              <calculation class='tableau' formula='MAKEPOINT([Geometry Coordinates 0 0],[Geometry Coordinates 0 1])' />
+            </column>
+            <column caption='Distance' datatype='real' name='[Calculation_723812919168614406]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='DISTANCE([Calculation_723812919168425988],[Calculation_723812919168524293],&apos;Km&apos;)' />
+            </column>
+            <column caption='Flights LINE' datatype='spatial' name='[Calculation_723812919175372808]' role='measure' type='nominal'>
+              <calculation class='tableau' formula='MAKELINE([Calculation_723812919168425988],[Calculation_723812919168524293])' />
+            </column>
+            <column datatype='real' name='[Geometry Coordinates 0 0]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Geometry Coordinates 0 1]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Geometry Coordinates 1 0]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Geometry Coordinates 1 1]' role='measure' type='quantitative' />
+            <column caption='Route - Split 1' datatype='string' name='[Route - Split 1]' role='dimension' type='nominal' user:SplitFieldIndex='1' user:SplitFieldOrigin='[federated.1i51rnd1nc8d5w17g1vig076jv7i].[Route]'>
+              <calculation class='tableau' formula='TRIM( SPLIT( [Route], &quot;-&quot;, 1 ) )' />
+            </column>
+            <column caption='Route - Split 2' datatype='string' name='[Route - Split 2]' role='dimension' type='nominal' user:SplitFieldIndex='2' user:SplitFieldOrigin='[federated.1i51rnd1nc8d5w17g1vig076jv7i].[Route]'>
+              <calculation class='tableau' formula='TRIM( SPLIT( [Route], &quot;-&quot;, 2 ) )' />
+            </column>
+            <column datatype='string' name='[Route]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_723812919168614406]' derivation='Avg' name='[avg:Calculation_723812919168614406:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_723812919175372808]' derivation='Collect' name='[clct:Calculation_723812919175372808:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Route]' derivation='None' name='[none:Route:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_723812919168614406]' derivation='Sum' name='[sum:Calculation_723812919168614406:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1i51rnd1nc8d5w17g1vig076jv7i].[Action (Busy)]'>
+            <groupfilter function='member' level='[Calculation_723812919165427714]' member='&quot;LAX&quot;' user:ui-action-filter='[Action2_FEEB94A221BA4A0B86A8D4A4134CB13B]' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1i51rnd1nc8d5w17g1vig076jv7i].[Action (Busy)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1i51rnd1nc8d5w17g1vig076jv7i].[Longitude (generated)]' field-type='quantitative' max='12891000.799670339' min='-21417313.009308457' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.1i51rnd1nc8d5w17g1vig076jv7i].[Latitude (generated)]' field-type='quantitative' max='16218719.979914133' min='-5707646.1881110631' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.1i51rnd1nc8d5w17g1vig076jv7i].[sum:Calculation_723812919168614406:qk]' palette='red_10_0' type='interpolated' />
+            <encoding attr='color' field='[federated.1i51rnd1nc8d5w17g1vig076jv7i].[avg:Calculation_723812919168614406:qk]' palette='red_10_0' type='interpolated' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <color column='[federated.1i51rnd1nc8d5w17g1vig076jv7i].[avg:Calculation_723812919168614406:qk]' />
+              <text column='[federated.1i51rnd1nc8d5w17g1vig076jv7i].[none:Route:nk]' />
+              <text column='[federated.1i51rnd1nc8d5w17g1vig076jv7i].[sum:Calculation_723812919168614406:qk]' />
+              <lod column='[federated.1i51rnd1nc8d5w17g1vig076jv7i].[clct:Calculation_723812919175372808:nk]' />
+              <lod column='[federated.1i51rnd1nc8d5w17g1vig076jv7i].[none:Route:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1i51rnd1nc8d5w17g1vig076jv7i].[Latitude (generated)]</rows>
+        <cols>[federated.1i51rnd1nc8d5w17g1vig076jv7i].[Longitude (generated)]</cols>
+      </table>
+      <simple-id uuid='{E292656B-000D-48A2-9969-8D2EC837D49D}' />
+    </worksheet>
+    <worksheet name='Flights taking off'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Air travel data (air travel dataset)' name='federated.1i51rnd1nc8d5w17g1vig076jv7i' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1i51rnd1nc8d5w17g1vig076jv7i'>
+            <column caption='Number of Flights' datatype='integer' name='[Calculation_723812919161110529]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='1' />
+            </column>
+            <column caption='Busy' datatype='string' name='[Calculation_723812919165427714]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF [Route - Split 1] = &apos;SFO&apos; THEN [Route - Split 2] ELSE [Route - Split 1] END' />
+            </column>
+            <column datatype='date' name='[Date]' role='dimension' type='ordinal' />
+            <column caption='Route - Split 1' datatype='string' name='[Route - Split 1]' role='dimension' type='nominal' user:SplitFieldIndex='1' user:SplitFieldOrigin='[federated.1i51rnd1nc8d5w17g1vig076jv7i].[Route]'>
+              <calculation class='tableau' formula='TRIM( SPLIT( [Route], &quot;-&quot;, 1 ) )' />
+            </column>
+            <column caption='Route - Split 2' datatype='string' name='[Route - Split 2]' role='dimension' type='nominal' user:SplitFieldIndex='2' user:SplitFieldOrigin='[federated.1i51rnd1nc8d5w17g1vig076jv7i].[Route]'>
+              <calculation class='tableau' formula='TRIM( SPLIT( [Route], &quot;-&quot;, 2 ) )' />
+            </column>
+            <column datatype='string' name='[Route]' role='dimension' type='nominal' />
+            <column-instance column='[Date]' derivation='Day' name='[dy:Date:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Date]' derivation='Month' name='[mn:Date:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Date]' derivation='None' name='[none:Date:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Calculation_723812919161110529]' derivation='Sum' name='[sum:Calculation_723812919161110529:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1i51rnd1nc8d5w17g1vig076jv7i].[Action (Busy)]'>
+            <groupfilter function='member' level='[Calculation_723812919165427714]' member='&quot;LAX&quot;' user:ui-action-filter='[Action2_FEEB94A221BA4A0B86A8D4A4134CB13B]' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1i51rnd1nc8d5w17g1vig076jv7i].[none:Date:ok]'>
+            <groupfilter count='10' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='SUM([Calculation_723812919161110529])' function='order' user:ui-marker='order'>
+                <groupfilter function='level-members' level='[none:Date:ok]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.1i51rnd1nc8d5w17g1vig076jv7i].[none:Date:ok]</column>
+            <column>[federated.1i51rnd1nc8d5w17g1vig076jv7i].[Action (Busy)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.1i51rnd1nc8d5w17g1vig076jv7i].[dy:Date:ok]' value='81' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Shape' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <text column='[federated.1i51rnd1nc8d5w17g1vig076jv7i].[mn:Date:ok]' />
+              <text column='[federated.1i51rnd1nc8d5w17g1vig076jv7i].[dy:Date:ok]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='1' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1i51rnd1nc8d5w17g1vig076jv7i].[sum:Calculation_723812919161110529:qk]</rows>
+        <cols>[federated.1i51rnd1nc8d5w17g1vig076jv7i].[dy:Date:ok]</cols>
+      </table>
+      <simple-id uuid='{367D4C70-1274-4AE4-8051-70F52FE4CB65}' />
+    </worksheet>
+    <worksheet name='Top 10 busiest routes '>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Air travel data (air travel dataset)' name='federated.1i51rnd1nc8d5w17g1vig076jv7i' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1i51rnd1nc8d5w17g1vig076jv7i'>
+            <column caption='Number of Flights' datatype='integer' name='[Calculation_723812919161110529]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='1' />
+            </column>
+            <column caption='Busy' datatype='string' name='[Calculation_723812919165427714]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF [Route - Split 1] = &apos;SFO&apos; THEN [Route - Split 2] ELSE [Route - Split 1] END' />
+            </column>
+            <column caption='Route - Split 1' datatype='string' name='[Route - Split 1]' role='dimension' type='nominal' user:SplitFieldIndex='1' user:SplitFieldOrigin='[federated.1i51rnd1nc8d5w17g1vig076jv7i].[Route]'>
+              <calculation class='tableau' formula='TRIM( SPLIT( [Route], &quot;-&quot;, 1 ) )' />
+            </column>
+            <column caption='Route - Split 2' datatype='string' name='[Route - Split 2]' role='dimension' type='nominal' user:SplitFieldIndex='2' user:SplitFieldOrigin='[federated.1i51rnd1nc8d5w17g1vig076jv7i].[Route]'>
+              <calculation class='tableau' formula='TRIM( SPLIT( [Route], &quot;-&quot;, 2 ) )' />
+            </column>
+            <column datatype='string' name='[Route]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_723812919165427714]' derivation='None' name='[none:Calculation_723812919165427714:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_723812919161110529]' derivation='Sum' name='[sum:Calculation_723812919161110529:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1i51rnd1nc8d5w17g1vig076jv7i].[none:Calculation_723812919165427714:nk]'>
+            <groupfilter count='10' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='SUM([Calculation_723812919161110529])' function='order' user:ui-marker='order'>
+                <groupfilter function='level-members' level='[none:Calculation_723812919165427714:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.1i51rnd1nc8d5w17g1vig076jv7i].[none:Calculation_723812919165427714:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.1i51rnd1nc8d5w17g1vig076jv7i].[sum:Calculation_723812919161110529:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.1i51rnd1nc8d5w17g1vig076jv7i].[none:Calculation_723812919165427714:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#76b7b2' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1i51rnd1nc8d5w17g1vig076jv7i].[none:Calculation_723812919165427714:nk]</rows>
+        <cols>[federated.1i51rnd1nc8d5w17g1vig076jv7i].[sum:Calculation_723812919161110529:qk]</cols>
+      </table>
+      <simple-id uuid='{8109804D-F0FE-48B7-B518-CC81B5DC6041}' />
+    </worksheet>
+    <worksheet name='Top 10 longest routes'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Air travel data (air travel dataset)' name='federated.1i51rnd1nc8d5w17g1vig076jv7i' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1i51rnd1nc8d5w17g1vig076jv7i'>
+            <column caption='Busy' datatype='string' name='[Calculation_723812919165427714]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF [Route - Split 1] = &apos;SFO&apos; THEN [Route - Split 2] ELSE [Route - Split 1] END' />
+            </column>
+            <column caption='Origin' datatype='spatial' name='[Calculation_723812919168425988]' role='measure' type='nominal'>
+              <calculation class='tableau' formula='MAKEPOINT([Geometry Coordinates 1 1],[Geometry Coordinates 1 0])' />
+            </column>
+            <column caption='Destination' datatype='spatial' name='[Calculation_723812919168524293]' role='measure' type='nominal'>
+              <calculation class='tableau' formula='MAKEPOINT([Geometry Coordinates 0 0],[Geometry Coordinates 0 1])' />
+            </column>
+            <column caption='Distance' datatype='real' name='[Calculation_723812919168614406]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='DISTANCE([Calculation_723812919168425988],[Calculation_723812919168524293],&apos;Km&apos;)' />
+            </column>
+            <column datatype='real' name='[Geometry Coordinates 0 0]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Geometry Coordinates 0 1]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Geometry Coordinates 1 0]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Geometry Coordinates 1 1]' role='measure' type='quantitative' />
+            <column caption='Route - Split 1' datatype='string' name='[Route - Split 1]' role='dimension' type='nominal' user:SplitFieldIndex='1' user:SplitFieldOrigin='[federated.1i51rnd1nc8d5w17g1vig076jv7i].[Route]'>
+              <calculation class='tableau' formula='TRIM( SPLIT( [Route], &quot;-&quot;, 1 ) )' />
+            </column>
+            <column caption='Route - Split 2' datatype='string' name='[Route - Split 2]' role='dimension' type='nominal' user:SplitFieldIndex='2' user:SplitFieldOrigin='[federated.1i51rnd1nc8d5w17g1vig076jv7i].[Route]'>
+              <calculation class='tableau' formula='TRIM( SPLIT( [Route], &quot;-&quot;, 2 ) )' />
+            </column>
+            <column datatype='string' name='[Route]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_723812919165427714]' derivation='None' name='[none:Calculation_723812919165427714:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_723812919168614406]' derivation='Sum' name='[sum:Calculation_723812919168614406:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1i51rnd1nc8d5w17g1vig076jv7i].[Action (Busy)]'>
+            <groupfilter function='member' level='[Calculation_723812919165427714]' member='&quot;LAX&quot;' user:ui-action-filter='[Action2_FEEB94A221BA4A0B86A8D4A4134CB13B]' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1i51rnd1nc8d5w17g1vig076jv7i].[none:Calculation_723812919165427714:nk]'>
+            <groupfilter count='10' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='AVG([Calculation_723812919168614406])' function='order' user:ui-marker='order'>
+                <groupfilter function='level-members' level='[none:Calculation_723812919165427714:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.1i51rnd1nc8d5w17g1vig076jv7i].[none:Calculation_723812919165427714:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.1i51rnd1nc8d5w17g1vig076jv7i].[sum:Calculation_723812919168614406:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.1i51rnd1nc8d5w17g1vig076jv7i].[none:Calculation_723812919165427714:nk]</column>
+            <column>[federated.1i51rnd1nc8d5w17g1vig076jv7i].[Action (Busy)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#76b7b2' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='469' />
+                <format attr='maxwidth' value='469' />
+                <format attr='minheight' value='200' />
+                <format attr='maxheight' value='200' />
+                <format attr='aspect' value='0' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1i51rnd1nc8d5w17g1vig076jv7i].[none:Calculation_723812919165427714:nk]</rows>
+        <cols>[federated.1i51rnd1nc8d5w17g1vig076jv7i].[sum:Calculation_723812919168614406:qk]</cols>
+      </table>
+      <simple-id uuid='{41449C2A-36AD-46E2-BE63-991340F97C0E}' />
+    </worksheet>
+    <worksheet name='Top destinations'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Air travel data (air travel dataset)' name='federated.1i51rnd1nc8d5w17g1vig076jv7i' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1i51rnd1nc8d5w17g1vig076jv7i'>
+            <column caption='Number of Flights' datatype='integer' name='[Calculation_723812919161110529]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='1' />
+            </column>
+            <column caption='Busy' datatype='string' name='[Calculation_723812919165427714]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF [Route - Split 1] = &apos;SFO&apos; THEN [Route - Split 2] ELSE [Route - Split 1] END' />
+            </column>
+            <column caption='Route - Split 1' datatype='string' name='[Route - Split 1]' role='dimension' type='nominal' user:SplitFieldIndex='1' user:SplitFieldOrigin='[federated.1i51rnd1nc8d5w17g1vig076jv7i].[Route]'>
+              <calculation class='tableau' formula='TRIM( SPLIT( [Route], &quot;-&quot;, 1 ) )' />
+            </column>
+            <column caption='Route - Split 2' datatype='string' name='[Route - Split 2]' role='dimension' type='nominal' user:SplitFieldIndex='2' user:SplitFieldOrigin='[federated.1i51rnd1nc8d5w17g1vig076jv7i].[Route]'>
+              <calculation class='tableau' formula='TRIM( SPLIT( [Route], &quot;-&quot;, 2 ) )' />
+            </column>
+            <column datatype='string' name='[Route]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_723812919165427714]' derivation='None' name='[none:Calculation_723812919165427714:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_723812919161110529]' derivation='Sum' name='[sum:Calculation_723812919161110529:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1i51rnd1nc8d5w17g1vig076jv7i].[Action (Busy)]'>
+            <groupfilter function='member' level='[Calculation_723812919165427714]' member='&quot;LAX&quot;' user:ui-action-filter='[Action2_FEEB94A221BA4A0B86A8D4A4134CB13B]' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1i51rnd1nc8d5w17g1vig076jv7i].[none:Calculation_723812919165427714:nk]'>
+            <groupfilter count='10' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='SUM([Calculation_723812919161110529])' function='order' user:ui-marker='order'>
+                <groupfilter function='level-members' level='[none:Calculation_723812919165427714:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.1i51rnd1nc8d5w17g1vig076jv7i].[none:Calculation_723812919165427714:nk]</column>
+            <column>[federated.1i51rnd1nc8d5w17g1vig076jv7i].[Action (Busy)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <size column='[federated.1i51rnd1nc8d5w17g1vig076jv7i].[sum:Calculation_723812919161110529:qk]' />
+              <text column='[federated.1i51rnd1nc8d5w17g1vig076jv7i].[none:Calculation_723812919165427714:nk]' />
+              <text column='[federated.1i51rnd1nc8d5w17g1vig076jv7i].[sum:Calculation_723812919161110529:qk]' />
+              <color column='[federated.1i51rnd1nc8d5w17g1vig076jv7i].[none:Calculation_723812919165427714:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{F2E7BD7D-2431-4316-943E-CCBBBECA2709}' />
+    </worksheet>
+    <worksheet name='Total Flights in a month'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Air travel data (air travel dataset)' name='federated.1i51rnd1nc8d5w17g1vig076jv7i' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1i51rnd1nc8d5w17g1vig076jv7i'>
+            <column caption='Number of Flights' datatype='integer' name='[Calculation_723812919161110529]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='1' />
+            </column>
+            <column caption='Busy' datatype='string' name='[Calculation_723812919165427714]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF [Route - Split 1] = &apos;SFO&apos; THEN [Route - Split 2] ELSE [Route - Split 1] END' />
+            </column>
+            <column datatype='date' name='[Date]' role='dimension' type='ordinal' />
+            <column caption='Route - Split 1' datatype='string' name='[Route - Split 1]' role='dimension' type='nominal' user:SplitFieldIndex='1' user:SplitFieldOrigin='[federated.1i51rnd1nc8d5w17g1vig076jv7i].[Route]'>
+              <calculation class='tableau' formula='TRIM( SPLIT( [Route], &quot;-&quot;, 1 ) )' />
+            </column>
+            <column caption='Route - Split 2' datatype='string' name='[Route - Split 2]' role='dimension' type='nominal' user:SplitFieldIndex='2' user:SplitFieldOrigin='[federated.1i51rnd1nc8d5w17g1vig076jv7i].[Route]'>
+              <calculation class='tableau' formula='TRIM( SPLIT( [Route], &quot;-&quot;, 2 ) )' />
+            </column>
+            <column datatype='string' name='[Route]' role='dimension' type='nominal' />
+            <column-instance column='[Date]' derivation='Day' name='[dy:Date:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Date]' derivation='Month' name='[mn:Date:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Calculation_723812919161110529]' derivation='Sum' name='[sum:Calculation_723812919161110529:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Date]' derivation='Year' name='[yr:Date:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1i51rnd1nc8d5w17g1vig076jv7i].[Action (Busy)]'>
+            <groupfilter function='member' level='[Calculation_723812919165427714]' member='&quot;LAX&quot;' user:ui-action-filter='[Action2_FEEB94A221BA4A0B86A8D4A4134CB13B]' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1i51rnd1nc8d5w17g1vig076jv7i].[Action (Busy)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='height' field='[federated.1i51rnd1nc8d5w17g1vig076jv7i].[dy:Date:ok]' value='158' />
+            <format attr='display' class='0' field='[federated.1i51rnd1nc8d5w17g1vig076jv7i].[sum:Calculation_723812919161110529:qk]' scope='rows' value='false' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.1i51rnd1nc8d5w17g1vig076jv7i].[dy:Date:ok]' value='26' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='height-header' value='21' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='display' field='[federated.1i51rnd1nc8d5w17g1vig076jv7i].[dy:Date:ok]' value='false' />
+            <format attr='display' field='[federated.1i51rnd1nc8d5w17g1vig076jv7i].[yr:Date:ok]' value='false' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' value='0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <lod column='[federated.1i51rnd1nc8d5w17g1vig076jv7i].[mn:Date:ok]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-color' value='#a0cbe8' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1i51rnd1nc8d5w17g1vig076jv7i].[sum:Calculation_723812919161110529:qk]</rows>
+        <cols>([federated.1i51rnd1nc8d5w17g1vig076jv7i].[yr:Date:ok] / ([federated.1i51rnd1nc8d5w17g1vig076jv7i].[mn:Date:ok] / [federated.1i51rnd1nc8d5w17g1vig076jv7i].[dy:Date:ok]))</cols>
+      </table>
+      <simple-id uuid='{7898BD00-DE03-4DC5-9DA5-A09260934E28}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='San Francisco Airline'>
+      <style />
+      <size maxheight='700' maxwidth='1200' minheight='700' minwidth='1200' sizing-mode='fixed' />
+      <zones>
+        <zone h='42714' id='1' name='Destinations' w='33333' x='1833' y='54000' />
+        <zone h='43143' id='2' name='Top destinations' w='33333' x='36000' y='53714' />
+        <zone h='40429' id='3' name='Top 10 longest routes' w='32917' x='1583' y='10143' />
+        <zone h='39143' id='4' name='Top 10 busiest routes ' w='30583' x='35583' y='10714' />
+        <zone h='45429' id='5' name='Total Flights in a month' w='33333' x='66917' y='53571' />
+        <zone h='42286' id='6' name='Flights taking off' w='33333' x='66333' y='9857' />
+        <zone forceUpdate='true' h='7286' id='7' type-v2='text' w='82333' x='11500' y='2286'>
+          <formatted-text>
+            <run bold='true' fontcolor='#000000' fontsize='28'>AIRLINE ANALYSIS FOR SAN FRANCISCO</run>
+            <run>Æ&#10;</run>
+          </formatted-text>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1750' minheight='1750' sizing-mode='vscroll' />
+          <zones />
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{770AE2AC-3A9E-433F-9B03-CF7DBD9C0455}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='worksheet' name='Flights taking off'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{1624B07A-275F-447F-8B9D-1FFFE09ABB60}' />
+    </window>
+    <window class='worksheet' name='Total Flights in a month'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{C8C823E7-7896-4138-A936-70AF245EBA61}' />
+    </window>
+    <window class='worksheet' name='Top 10 busiest routes '>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{F89344F6-1B6B-49EC-8369-BC03BBF30178}' />
+    </window>
+    <window class='worksheet' name='Top 10 longest routes'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{E7429AF9-ED6E-4177-BCA5-0794476D6437}' />
+    </window>
+    <window class='worksheet' name='Top destinations'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1i51rnd1nc8d5w17g1vig076jv7i].[none:Calculation_723812919165427714:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{FA4A1849-9E50-4854-83F0-74BF8414148A}' />
+    </window>
+    <window class='worksheet' name='Destinations'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1i51rnd1nc8d5w17g1vig076jv7i].[avg:Calculation_723812919168614406:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{5BCFAE9E-EBBA-429F-B2DA-5ED13574587F}' />
+    </window>
+    <window class='dashboard' maximized='true' name='San Francisco Airline'>
+      <viewpoints>
+        <viewpoint name='Destinations'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Flights taking off'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Top 10 busiest routes ' />
+        <viewpoint name='Top 10 longest routes' />
+        <viewpoint name='Top destinations' />
+        <viewpoint name='Total Flights in a month'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='4' />
+      <simple-id uuid='{F8911F0D-75B8-4FA5-A23B-5CC47651A2CC}' />
+    </window>
+  </windows>
+</workbook>
